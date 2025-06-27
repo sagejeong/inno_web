@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>회원가입</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 16px 24px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .hamburger {
+      font-size: 24px;
+      margin-right: 20px;
+      text-decoration: none;
+      color: #111;
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      padding: 14px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 90%;
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    input[type="submit"] {
+      padding: 6px 12px;
+      font-size: 14px;
+      background-color: #444;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .checkbox-group {
+      margin-top: 8px;
+    }
+
+    .complete-btn {
+      display: block;
+      width: 120px;
+      margin: 30px auto 0;
+      background-color: #000000;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .complete-btn:hover {
+      background-color: #007acc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <a href="menu.html" class="hamburger">&#9776;</a>
+    <img src="img/inno_logo.png" alt="INNO 로고" class="logo" />
+  </div>
+
+  <!-- Main -->
+  <div class="container">
+    <form action="form3.php">
+
+      <h3>기본정보 입력</h3>
+      <table>
+        <tr>
+          <td>아이디</td>
+          <td>
+            <input type="text" name="userid" />
+            <input type="submit" value="중복확인" />
+          </td>
+        </tr>
+        <tr>
+          <td>비밀번호</td>
+          <td><input type="password" name="pass" /></td>
+        </tr>
+        <tr>
+          <td>비밀번호 확인</td>
+          <td><input type="password" name="passch" /></td>
+        </tr>
+      </table>
+
+      <h3>개인정보 입력</h3>
+      <table>
+        <tr>
+          <td>이름</td>
+          <td><input type="text" name="kname" /></td>
+        </tr>
+        <tr>
+          <td>이메일</td>
+          <td>
+            <input type="email" name="kemail" />
+            <input type="submit" value="이메일 인증" />
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="email_agree" /> 이메일 수신 동의</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>휴대전화번호</td>
+          <td>
+            <input type="tel" name="number" />
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="sms_agree" /> SMS 수신 동의</label>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+    </form>
+
+    <!-- 완료 버튼 -->
+    <button class="complete-btn" onclick="location.href='sign_up_final.html'">완료</button>
+
+  </div>
+
+</body>
+</html>
