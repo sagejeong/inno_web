@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>오늘 하루 유난히</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #eaeaea;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 16px 24px;
+      background-color: #fff;
+    }
+
+    .hamburger {
+      font-size: 28px;
+      text-decoration: none;
+      color: #000;
+      margin-right: 16px;
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    .content {
+      background-color: #111;
+      color: #fff;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      display: flex;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .album {
+      width: 220px;
+      background-color: #f4f4f4;
+      padding: 16px;
+      text-align: center;
+      border-radius: 8px;
+      margin-right: 40px;
+    }
+
+    .album img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    .album-title {
+      font-weight: bold;
+      color: #000;
+      font-size: 16px;
+    }
+
+    .album-artist {
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .listen-btn {
+      font-size: 13px;
+      padding: 8px 10px;
+      background-color: #111;
+      color: white;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .text-content {
+      flex: 1;
+    }
+
+    .text-content h2 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    .text-content p {
+      line-height: 1.6;
+      font-size: 15px;
+      margin-top: 16px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      padding: 6px 14px;
+      margin-right: 10px;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .listen-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 8px 10px;
+  background-color: #111;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+    .scrap-btn {
+      background-color: #444;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <a href="menu.html" class="hamburger">&#9776;</a>
+    <img src="img/INNO_SHARING.png" alt="INNO SHARING 로고" class="logo" />
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <!-- Album Info -->
+<div class="album">
+  <img src="img/starboy.png" alt="앨범커버" />
+  <div class="album-title">STARBOY</div>
+  <div class="album-artist">The Weeknd</div>
+  <a href="https://www.youtube.com/watch?v=plnfIj7dkJE&list=RDplnfIj7dkJE&start_radio=1" target="_blank" class="listen-btn">
+    🎧 LISTEN TO IT NOW
+  </a>
+</div>
+
+    <!-- Text -->
+    <div class="text-content">
+      <h2>오늘 하루 유난히</h2>
+      <p>
+        오늘 하루 유난히 버겁고 멍했는데,<br>
+        저녁에 조용히 방불 끄고 이 노래 듣자마자 기분이 좋아졌습니다.<br><br>
+
+        아무도 몰라주는 내 노력들이 그래도 있었다고,<br>
+        나 스스로한테 말해주는 느낌이라고 해야하나..<br><br>
+
+        'Look what you’ve done’ 이 가사 들으면서<br>
+        나를 좀 더 인정하게 됐달까,<br>
+        이 노래 진짜 좋습니다.
+      </p>
+
+      <div class="buttons">
+        <button class="like-btn">좋아요</button>
+        <button class="scrap-btn">스크랩</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

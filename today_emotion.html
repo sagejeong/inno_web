@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>감정 기록</title>
+
+  <!-- 구글폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f0f0f0; font-family: Arial, sans-serif;">
+
+  <!-- 헤더 -->
+  <table width="100%" style="padding: 10px 20px;">
+    <tr>
+      <td width="5%" align="left">
+        <!-- 햄버거 버튼 클릭 시 새 창으로 menu.html 열기 -->
+        <a href="menu.html" target="_blank" style="font-size: 24px; text-decoration: none;">&#9776;</a>
+      </td>
+      <td>
+      <!-- INNO 로고 이미지로 대체 -->
+       
+      <img src="img/inno_logo.png" alt="INNO 로고" style="height: 80px;" />
+    </td>
+  </tr>
+</table>
+
+  <!-- 타이틀 -->
+  <h1 style="font-family: 'Baloo 2', cursive; text-align: center; font-size: 32px; color: #2196F3; margin-top: 10px;">
+    <td>
+      <!-- INNO 로고 이미지로 대체 -->
+       
+      <img src="img/diary.png" alt="diarytitle" style="height: 70px;" />
+    </td>
+  </h1>
+
+  <!-- 일기 입력 영역 -->
+  <table align="center" style="margin-top: 20px;">
+    <tr>
+      <td>
+        <div style="background-color: white; width: 700px; border-radius: 10px; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+          
+          <!-- 제목 입력 -->
+          
+          <input type="text" style="width: 96%; height: 30px; font-size: 16px; padding: 5px; font-family: 'Nanum Pen Script', cursive;" />
+
+          <!-- 감정 기록 텍스트 -->
+          <textarea rows="10" placeholder="오늘의 감정을 기록해보세요..." style="
+            width: 95%; margin-top: 10px; font-size: 18px; font-family: 'Nanum Pen Script', cursive; padding: 10px; resize: none;
+          "></textarea>
+
+          <!-- 버튼들 -->
+           <!-- SAVE 버튼 -->
+      <a href="save.html">
+  <button style="padding: 10px 15px;">SAVE</button>
+</a>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- 음악과 함께 기록하러 가기 버튼 -->
+   <div style="text-align: center; margin-top: 40px;">
+      <a href="emotion_with_music.html">
+        <button style="padding: 10px 20px;">음악과 함께 기록하러 가기</button>
+      </a>
+    </div>
+
+</body>
+</html>
